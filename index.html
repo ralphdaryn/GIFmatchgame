@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/styles.css" />
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <title>GIF Match Game</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__container">
+        <h1 class="header__title">GIF Match Game</h1>
+        <img
+          class="header__img"
+          src="/assets/images/arcade.png"
+          alt=""
+        />
+      </div>
+      <div class="header__subtitle-container">
+        <p class="header__subtitle">
+          Please select 10 GIFs that match the category and submit in 3 tries or
+          less
+        </p>
+      </div>
+    </header>
+
+    <section class="controls">
+      <div class="controls__container">
+        <form class="controls__form">
+          <label class="controls__label" for="categories">Categories</label>
+          <select
+            class="controls__categories-select"
+            name="categories"
+            id="categories"
+          ><option class="controls__categories-option" value="trending">Trending</option></select>
+          <label class="controls__label" for="subcategories"
+            >Subcategories</label
+          >
+          <select
+            class="controls__subcategories-select"
+            name="subcategories"
+            id="subcategories"
+          ></select>
+        </form>
+      </div>
+        <div class="controls__button-container">
+          <button class="controls__button">Start</button>
+        </div>
+      
+      
+    </section>
+
+    <section class="gifmatch">
+      <div class="gifmatch__container">
+      </div>
+      <div class="gifmatch__button-container">
+        <button class="gifmatch__button">Submit</button>
+      </div>
+      <div class="gifmatch__tries">
+        <h3 class="gifmatch__tries-text">Tries remaining:</h3>
+        <p class="gifmatch__tries-remaining"></p>
+      </div>
+      
+    </section>
+
+    <footer class="footer">
+      <div class="footer__container">
+        <div class="footer__text">Power by GIPHY API</div>
+        <div class="footer__text">Designed & Created by:</div>
+        <div class="footer__text">Nick Virga & Ralph Cabauatan</div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

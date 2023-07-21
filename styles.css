@@ -1,0 +1,356 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  padding: 0;
+  background-image: url(/assets/images/hero-background.jpg);
+  font-family: "Orbitron", sans-serif;
+}
+
+@font-face {
+  font-family: "Orbitron";
+  src: url(/assets/fonts/Orbitron-Regular.ttf);
+  font-weight: 400;
+}
+@font-face {
+  font-family: "OrbitronSemi";
+  src: url(/assets/fonts/Orbitron-SemiBold.ttf);
+  font-weight: 600;
+}
+@font-face {
+  font-family: "OrbitronBold";
+  src: url(/assets/fonts/Orbitron-Bold.ttf);
+  font-weight: 700;
+}
+@media (min-width: 320px) and (max-width: 767px) {
+  .header {
+    padding: 1.5rem;
+  }
+  .header__title {
+    font-size: 1.5rem;
+    color: white;
+    font-family: "OrbitronBold";
+    text-transform: uppercase;
+  }
+  .header__container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .header__img {
+    width: 30px;
+  }
+  .header__subtitle {
+    color: white;
+    margin-top: 1rem;
+  }
+  .header__subtitle-container {
+    background-color: rgba(48, 21, 79, 0.699);
+  }
+  .controls__container {
+    width: 100%;
+    height: 80px;
+    background-color: rgba(0, 205, 251, 0.377);
+  }
+  .controls__form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  .controls__label {
+    color: white;
+  }
+  .controls__categories-select {
+    width: 6.25rem;
+    background-color: black;
+    color: white;
+    font-family: "Orbitron";
+  }
+  .controls__categories-select:hover {
+    cursor: pointer;
+  }
+  .controls__subcategories-select {
+    width: 6.25rem;
+    background-color: black;
+    font-family: "Orbitron";
+    color: white;
+  }
+  .controls__subcategories-select:hover {
+    cursor: pointer;
+  }
+  .controls__button {
+    display: flex;
+    justify-content: center;
+    padding: 0.5rem 2rem;
+    background-color: rgb(118, 63, 194);
+    border-radius: 15px;
+    color: white;
+    text-transform: uppercase;
+    font-family: "OrbitronBold";
+    transition: transform 0.2s ease, border-color 0.2s ease;
+    border: 2px solid rgb(118, 63, 194);
+  }
+  .controls__button:hover {
+    cursor: pointer;
+    transform: translateY(-2px);
+    background-color: rgb(91, 22, 187);
+    border-color: rgb(168, 113, 214);
+  }
+  .controls__button-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-top: 0.25rem;
+    margin-bottom: 0.25rem;
+  }
+  .gifmatch__container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.563);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.15rem;
+  }
+  .gifmatch__gif {
+    border: black 1px solid;
+  }
+  .gifmatch__gif--selected {
+    border: 1px orange solid;
+  }
+  .gifmatch__gif:hover {
+    background-image: linear-gradient(to bottom, rgba(50, 50, 50, 0.5), rgba(50, 50, 50, 0.5)), url();
+    cursor: pointer;
+  }
+  .gifmatch__button {
+    background-color: rgb(248, 73, 146);
+    padding: 0.5rem 2rem;
+    border-radius: 15px;
+    color: white;
+    margin-top: 0.5rem;
+    text-transform: uppercase;
+    font-family: "OrbitronBold";
+    transition: transform 0.2s ease, border-color 0.2s ease;
+    border: 2px solid rgb(248, 73, 146);
+  }
+  .gifmatch__button:hover {
+    cursor: pointer;
+    transform: translateY(-2px);
+    background-color: rgb(255, 2, 107);
+    border-color: rgb(246, 100, 161);
+  }
+  .gifmatch__button-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+  .gifmatch__tries {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+    background-color: rgba(5, 0, 2, 0.41);
+    gap: 1rem;
+  }
+  .gifmatch__tries-text {
+    color: white;
+  }
+  .gifmatch__tries-remaining {
+    color: white;
+    font-size: 1.5rem;
+    font-family: "OrbitronBold";
+  }
+  .footer {
+    width: 100%;
+    margin-top: 8rem;
+  }
+  .footer__container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(48, 21, 79, 0.88);
+  }
+  .footer__text {
+    color: white;
+  }
+}
+@media (min-width: 768px) and (max-width: 1920px) {
+  .header {
+    padding: 3rem;
+  }
+  .header__title {
+    font-size: 2rem;
+    color: white;
+    font-family: "OrbitronBold";
+    text-transform: uppercase;
+  }
+  .header__img {
+    width: 50px;
+  }
+  .header__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .header__img-light {
+    width: 20px;
+  }
+  .header__subtitle {
+    color: white;
+    font-size: 1.5rem;
+  }
+  .header__subtitle-container {
+    background-color: rgba(48, 21, 79, 0.699);
+    display: flex;
+    width: 100%;
+    height: 80px;
+    justify-content: center;
+    align-items: center;
+  }
+  .controls__container {
+    width: 100%;
+    height: 50px;
+    background-color: rgba(0, 205, 251, 0.377);
+    display: flex;
+    justify-content: center;
+  }
+  .controls__form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+  }
+  .controls__label {
+    color: white;
+  }
+  .controls__categories-select {
+    width: 6.25rem;
+    background-color: black;
+    color: white;
+    font-family: "Orbitron";
+  }
+  .controls__categories-select:hover {
+    cursor: pointer;
+  }
+  .controls__subcategories-select {
+    width: 6.25rem;
+    background-color: black;
+    font-family: "Orbitron";
+    color: white;
+  }
+  .controls__subcategories-select:hover {
+    cursor: pointer;
+  }
+  .controls__button {
+    display: flex;
+    justify-content: center;
+    padding: 0.75rem 2rem;
+    background-color: #763fc2;
+    margin-top: 0.5rem;
+    border-radius: 15px;
+    color: white;
+    text-transform: uppercase;
+    font-family: "OrbitronBold";
+    font-size: 1.25rem;
+    margin-bottom: 0.25rem;
+    transition: transform 0.2s ease, border-color 0.2s ease;
+    border: 2px solid rgb(118, 63, 194);
+  }
+  .controls__button:hover {
+    cursor: pointer;
+    background-color: rgb(91, 22, 187);
+    transform: translateY(-2px);
+    border-color: rgb(168, 113, 214);
+  }
+  .controls__button-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  .gifmatch__container {
+    width: 100%;
+    max-width: 750px;
+    margin: auto;
+    background-color: rgba(0, 0, 0, 0.563);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  .gifmatch__gif {
+    border: 2px transparent solid;
+    box-sizing: content-box;
+  }
+  .gifmatch__gif--selected {
+    border: 2px orange solid;
+  }
+  .gifmatch__gif:hover {
+    background-image: linear-gradient(to bottom, rgba(50, 50, 50, 0.5), rgba(50, 50, 50, 0.5)), url();
+    cursor: pointer;
+  }
+  .gifmatch__button {
+    background-color: rgb(248, 73, 146);
+    padding: 0.75rem 2rem;
+    border-radius: 15px;
+    color: white;
+    margin-top: 0.5rem;
+    text-transform: uppercase;
+    font-family: "OrbitronBold";
+    font-size: 1.25rem;
+    transition: transform 0.2s ease, border-color 0.2s ease;
+    border: 2px solid rgb(248, 73, 146);
+  }
+  .gifmatch__button:hover {
+    cursor: pointer;
+    transform: translateY(-2px);
+    background-color: rgb(255, 2, 107);
+    border-color: rgb(246, 100, 161);
+  }
+  .gifmatch__button-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  .gifmatch__tries {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+    background-color: rgba(5, 0, 2, 0.41);
+    gap: 2rem;
+  }
+  .gifmatch__tries-text {
+    color: white;
+  }
+  .gifmatch__tries-remaining {
+    color: white;
+    font-size: 2rem;
+    font-family: "OrbitronBold";
+  }
+  .footer {
+    width: 100%;
+    margin-top: 8rem;
+  }
+  .footer__container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(48, 21, 79, 0.88);
+  }
+  .footer__text {
+    color: white;
+  }
+}/*# sourceMappingURL=styles.css.map */
