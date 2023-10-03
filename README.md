@@ -32,7 +32,7 @@ GifMatch brings a delightful twist to the classic memory card game by incorporat
 
 ## 🌐 API Reference
 
-- **GIPHY Developers**: GIPHY SDK API: https://oxylabs.io/](https://developers.giphy.com/docs/sdk
+- **GIPHY Developers**: GIPHY SDK API: https://developers.giphy.com/docs/sdk
 
 ## 🧠 Lessons Learned
 
