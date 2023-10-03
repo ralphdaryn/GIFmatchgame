@@ -3,9 +3,9 @@ GifMatch: The Ultimate Gif Matching Game 🚀
 ## Overview
 GifMatch brings a delightful twist to the classic memory card game by incorporating fun, animated gifs. Developed during the BrainStation Live Hackathon, this project not only culminated in a lively, engaging game but also in a wealth of learning and collaboration.
 
-![Desktop View](./src/assets/images/gif-match-desktop.jpg)
-![Mobile View](./src/assets/images/gif-match-mobile.jpg)
-![Mobile View](./src/assets/images/gif-match-mobile2.jpg)
+![Desktop View](./assets/images/gif-match-desktop.jpg)
+![Mobile View](./assets/images/gif-match-mobile.jpg)
+![Mobile View](./assets/images/gif-match-mobile2.jpg)
 
 
 ## 📝 Features and/or Usage Instructions
