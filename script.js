@@ -1,5 +1,5 @@
 const BASE_URL = "https://api.giphy.com";
-const API_KEY = "?api_key=7hxB6Jns6YAhwUdDbzN9QRUHwz5VAXZf";
+const API_KEY = "?api_key=SeWR7tnfy2HfElaunurwvXrueRz8MPXH";
 // const API_KEY = "?api_key=rvIStNLz18hrU8mzhXjqb86MLdfX4yBf";
 let gameBoxEleArray = [];
 let triesRemaining = 3;
